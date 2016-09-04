@@ -36,4 +36,12 @@ public class Gift1 {
             return 0;
         }
     }
+
+    public static void main(String[] args){
+        Gift gift = new Gift();
+        int[] gifts = new  int[]{1, 2, 3, 2, 2};
+        int res = gift.getValue(gifts, 5);
+        System.out.println(res);
+    }
+
 }
