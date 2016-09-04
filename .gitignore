@@ -1,0 +1,8 @@
+# git ignore
+.metadata
+.settings
+.classpath
+
+out/
+*.iml
+.idea/
