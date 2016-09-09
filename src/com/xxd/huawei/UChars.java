@@ -1,6 +1,8 @@
 package com.xxd.huawei;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 /**
@@ -14,6 +16,16 @@ public class UChars {
         ArrayList<CharDist> list = new ArrayList(chars.length);
         for (char c : chars){
             list.add(new CharDist(c));
+        }
+        Comparator<CharDist> cmp = new Comparator<CharDist>() {
+            @Override
+            public int compare(CharDist o1, CharDist o2) {
+                return o1.dist - o2.dist;
+            }
+        };
+        Collections.sort(list, cmp);
+        for (CharDist cc : list){
+            System.out.print(cc.c);
         }
     }
 
