@@ -7,7 +7,7 @@ public class ListNode {
     //temporary
     public int val;
     public ListNode next;
-    ListNode(int x){val = x;}
+    public ListNode(int x){val = x;}
     public static void main(String[] args){
         long l = Long.MAX_VALUE;
     }
