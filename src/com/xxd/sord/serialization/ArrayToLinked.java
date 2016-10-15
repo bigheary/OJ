@@ -21,7 +21,7 @@ public class ArrayToLinked {
     }
 
     public static void main(String[] args){
-        int[] array = new int[]{1, 2, 3, 4};
+        int[] array = new int[]{1};
         ListNode head = toLinked(array);
         while(head!= null){
             System.out.println(head.val);
